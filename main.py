@@ -17,7 +17,7 @@ import curses, curses.textpad
 from streamcatcher import StreamCatcher
 from trendscatcher import TrendsCatcher
 from config import *
-from stats import Stats
+#from stats import Stats
 
 threads = {"catchers": [],
            "statsgenerators": [],
@@ -258,11 +258,12 @@ def preparePostdata(conf):
 
 ### Stats related functions
 ###
+'''
 def generateStatsForFile(input_filename):
     stats = Stats(input_filename, RESULTS_DIR+"cumulative-word-frequency-01.csv", RESULTS_DIR+"tokens_by_time-01.csv")
     stats.processFile()
     return stats
-
+'''
 if __name__ == '__main__':
     print "Starting.."
     main()

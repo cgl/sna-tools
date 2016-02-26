@@ -314,7 +314,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--projectname", help="project's name", dest="projectname")
-    parser.add_argument("users_filename", help="a file with rows as ""username, label""")
+    parser.add_argument("users_filename", help="a file with rows as username, label")
 
     args = parser.parse_args()
 

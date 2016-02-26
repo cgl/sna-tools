@@ -1,1 +1,2 @@
-export MCP_TWITTER_ROOT=~/Desktop/projects/research/projects/twitter/
+export MCP_TWITTER_ROOT=~/Documents/sna-tools/
+#export MCP_TWITTER_ROOT=~/Desktop/projects/research/projects/twitter/

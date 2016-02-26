@@ -64,6 +64,9 @@ class StreamCatcher(threading.Thread):
         for key, value in postdata.items():
                 params[key] = value
 
+        access_token_key = user_access_token_key_and_secrets[0][1]
+        access_token_secret = user_access_token_key_and_secrets[0][2]
+
         token = oauth.Token(key=access_token_key, secret=access_token_secret)
         consumer = oauth.Consumer(key=app_consumer_key, secret=app_consumer_secret)
 

@@ -1,4 +1,10 @@
 #!/bin/bash
+if [[ "$OSTYPE" == "linux-gnu" ]]; then 
+    platform='linux'
+elif [[ "$OSTYPE" == "darwin"* ]]; then 
+    platform='mac'
+    sudo easy_install jsonpickle psycopg2
+fi
 
 cd lib/python-twitter;
 
